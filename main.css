@@ -1,0 +1,206 @@
+a {
+    text-decoration: none;
+}
+
+.main-section,
+.mid-section,
+.navbar,
+.side-nav {
+   display:flex;
+   margin-left: auto;
+}
+
+.mid-section {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu, 
+.overlay,
+.resp-nav {
+    display: none;
+}
+
+.navbar {
+    margin-left: 50px;
+    gap: 30px;
+}
+
+.nav-link,  
+.drop-down li {
+    list-style: none;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+}
+
+.nav-link:hover  .drop-down {
+    display:block;
+ }
+
+ .side-nav  a {
+    padding: 5px;
+ }
+
+ .side-nav a:nth-of-type(2) {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h1::after {
+    content: " remote work";
+    display: block;
+}
+
+p, 
+.clients {
+    line-height:0;
+}
+
+.head {
+    line-height:50px;
+}
+
+img {
+    display: inline-block;
+}
+
+.clients img {
+    padding-right:30px ;
+}
+
+.box1 {
+    line-height: 250px;
+}
+
+.box2 {
+    width: 60%;
+}
+
+.main-img {
+    margin-left: 20%;
+    width:60%;
+}
+
+.mob-img {
+    display: none;
+}
+
+.learn-more {
+    cursor: pointer;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+@media (max-width:800px) {
+.main-section,
+.mid-section {
+    flex-direction: column;
+}
+
+.mid-section {
+    align-items:self-start;
+}
+
+ .menu {
+     display: inline;
+     float: right;
+     position: relative;
+}
+
+ .navbar,
+ .side-nav {
+     display: none;
+}
+ .overlay,
+ .resp-nav {
+     width:200px;
+     display: flex;
+     flex-direction: column;
+}
+
+ .overlay {
+     display: none;
+     line-height: 50px;
+     height: 100%;
+     background-color: white;
+     position: absolute;
+     top: 0;
+     right: 0;
+}
+
+ .menu:hover + .overlay {
+     display:flex;
+}
+
+ .resp-nav {
+     text-align: center;
+}
+
+ .close {
+     display: flex;
+     justify-content: end;
+}
+
+.resp-nav a:nth-of-type(2) {
+     border: 2px solid black;
+     border-radius: 10px;
+}
+
+h1 {
+     font-size: 3rem;
+}
+
+h1::after {
+     content: " remote work";
+     display: inline;
+}
+
+.box1,
+.box2 {
+      width: 100%;
+}
+
+.box1 {
+     order: 2;
+     text-align: center;
+     line-height: 200px;
+   }
+
+.box2 {
+     height: auto;
+     order: 1;
+   }
+
+.main-img {
+     display: none;
+}
+
+.mob-img {
+     max-width: 100%;
+     display: flex;
+}
+
+.learn-more {
+    cursor: pointer;
+    height: 40px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.clients img {
+    padding-right:20px ;
+}
+
+}
+
+
+
